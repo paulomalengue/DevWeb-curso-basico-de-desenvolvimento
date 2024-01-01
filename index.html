@@ -4,60 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevWeb 2023</title>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" type="" href="bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 
-    <title>DevWeb</title>
     <style>
-        .pt img:hover{
-            border-left: 4px solid red;
-            border-bottom-right-radius: 50px;
-            transition: .2s;
+        .container .img_top {
+            width: 160px;
         }
-        
     </style>
-
 </head>
 
 <body>
-    <div class="container mt-3">
-      
-       
-        <h1>DevWeb 2023-2024</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ab numquam aperiam, asperiores nam magni itaque
-        minus? Vel commodi dignissimos eum quaerat! Accusantium beatae, hic tempora earum iusto repellendus voluptatem.
-        <hr>
-        <div class="row">
-            <div class="col-sm-4 pt">
-                <img src="curso.jpg" alt="" width="80%">
-               
+    <div class="container">
+        <img src="assets/DevWeb.png" alt="" class="img_top mt-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link ">index</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                            id="navbarDropdown">Cursos</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="cursos.html">Lista de Cursos</a>
+                            <a class="dropdown-item" href="#">Preços</a>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item"><a href="saberMais.html" class="nav-link">Sobre nós</a></li>
+
+                </ul>
+
             </div>
-            <div class="col-sm-8">
-                <div class="alert alert-info mn">
-                    <h4>Descricao</h4>
-                    
-                </div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, magnam, vero voluptates distinctio
-                exercitationem nulla cum aut dolor quo nobis modi quam sit molestiae. Unde laborum sit amet veritatis
-                nostrum!
-                Nemo sunt adipisci alias pariatur quis illo deleniti exercitationem commodi dignissimos mollitia,
-                tempora sed repudiandae totam repellendus! Eligendi exercitationem quo dolorum molestiae accusantium
-                vero. Dolorem quia aspernatur amet a sequi.
-                Perspiciatis tempora sed in odit accusantium expedita hic dolores, eveniet amet labore ullam! Odit,
-                dolores. Repudiandae numquam laborum ex quasi, mollitia reprehenderit cupiditate voluptatem molestiae et
-                distinctio. Alias, molestias asperiores.
-                <br><br>
-                <a href="descricao.html" class="btn btn-default">Saber mais...</a>
-                    
-            </div>
+        </nav>
+
+        <br>
+        <div class="jumbotron">
+            <h1 class="display-4">Bem-vindo ao nosso site!</h1>
+            <p class="lead">Capacitando Estudantes de Informática</p>
+            <hr class="my-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam deserunt distinctio magnam
+                reprehenderit excepturi quas, molestiae amet cum dolore officia necessitatibus quos deleniti dolorum
+                aspernatur adipisci culpa obcaecati. Dolore.
+                Fuga sunt similique recusandae facilis commodi asperiores voluptate corporis laudantium voluptatem sed
+                accusamus fugit id, magni hic! Unde rerum earum vero nisi atque? Iste, pariatur. Assumenda porro neque
+                ullam temporibus?</p>
+
+            <p class="lead">
+                <a href="saberMais.html" class="btn btn-primary btn-lg"><i class="fa fa-search"></i> Saber mais...</a>
+            </p>
 
         </div>
+
+
+
+
+
+
+
+
+        <br><br><br><br>
+
+
 
     </div>
 
 
-    <link rel="stylesheet" href="bootstrap/bootstrap.bundle.min.js">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+
+
+
 </body>
 
 </html>
