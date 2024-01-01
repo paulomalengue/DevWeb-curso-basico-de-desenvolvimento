@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" type="" href="bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+
+
+    <style>
+        .img_top {
+            width: 160px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="assets/DevWeb.png" alt="" class="img_top mt-5">
+        <!-- menu de navegacao -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item "><a href="index3.html" class="nav-link ">index</a></li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown">
+                            Cursos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="cursos.html">Lista de Cursos</a>
+                            <a class="dropdown-item" href="precos.html">Preços</a>
+
+
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="saberMais.html" class="nav-link">Sobre nós</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <hr>
+        <div class="row">
+            <div class="col-sm-9">
+                <h3 class="display-5">Lista de cursos </h3>
+            </div>
+            <div class="col-sm-3 text-right"><small class="lead">(0 Cursos disponíveis)</small></div>
+        </div>
+        <hr>
+        <div class="row">
+
+            <div class="col-sm-9">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add">
+                    <i class="fa fa-plus-circle"></i> Registrar
+                </button>
+                <hr>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="Pesquisar">
+            </div>
+        </div>
+
+
+        <table class="table table-hover table-striped ">
+            <thead>
+                <th>NO.</th>
+                <th>Descrição do curso</th>
+                <th>Preço</th>
+                <th>Duração</th>
+                <th style="width: 220px;">Acções</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>React Native</td>
+                    <td>25.000 kz</td>
+                    <td>3 meses</td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-info" data-toggle="modal" data-target="#modal-edit"><i class="fa fa-edit"></i> Editar</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Excluir</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Arduino Básico</td>
+                    <td>30.000 kz</td>
+                    <td>30 dias</td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-info" data-toggle="modal" data-target="#modal-edit"><i class="fa fa-edit"></i> Editar</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Excluir</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>AutoCad</td>
+                    <td>45.000 kz</td>
+                    <td>2 meses</td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-info" data-toggle="modal" data-target="#modal-edit"><i class="fa fa-edit"></i> Editar</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Excluir</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Hardware</td>
+                    <td>20.000 kz</td>
+                    <td>45 dias</td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-info" data-toggle="modal" data-target="#modal-edit"><i class="fa fa-edit"></i> Editar</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Excluir</a>
+                    </td>
+
+
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+    </div>
+    <!-- modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-plus-circle"></i> Registrar curso
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        
+                    <form action="">                    
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Descrição">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="preço">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Duração">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-block"><i class="fa fa-check"></i> Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-plus-circle"></i> Editar curso
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        
+                    <form action="">                    
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Descrição">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="preço">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Duração">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-block"><i class="fa fa-refresh"></i> Guardar Alterações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
